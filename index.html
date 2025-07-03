@@ -5,28 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="2025-06-19/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../work6/2025-06-19/bootstrap-5.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="Kanit/Kanit-Black.ttf">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="../2025-06-19/bootstrap-5.3.7-dist/js/bootstrap.bundle.js"></script>
     <style>
-        @media (max-width: 700px) {
-
-            .flex-container,
-            nav {
-                flex-direction: column;
-            }
-        }
-        body {
-            font-family: 'Kanit', sans-serif;
+        @font-face {
+            font-family: 'Kanit';
+            src: url('../work6/ fonts/Kanit-Regular.ttf') format('truetype');
         }
     </style>
 </head>
 
-<body style="background-color: #666;width: 100%;">
+<body style="background-color: #777;">
     <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container">
-            <a class="navbar-brand" href="#" target="_blank"><img src="img/firsticon.gif" alt="logo" width="40"></a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" target="_blank"><img
+                    src="http://www.tatc.ac.th/files/resize_20100887_12051611113634.gif" alt="logo" width="40"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,12 +45,12 @@
                             <li><a class="dropdown-item" href="#">เพื่อนสมาชิก</a></li>
                         </ul>
                     </div>
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                            <a class="nav-link" href="#">
                                 เข้าสู่ระบบ
                             </a>
                         </li>
@@ -124,9 +118,9 @@
                 </li>
             </ul>
         </div>
-        <div class="row g-4">
-            <div class="col-md-3 bg-light p-2 mx-4">
-                <div class="container bg-light p-2 text-center rounded-1">
+        <div class="row m-3 gx-3">
+            <div class="col-3">
+                <div class="container bg-light p-3 text-center rounded-1">
                     <img src="img/logo.gif" alt="logo" width="150">
                     <h5>วิทยาลัยเทคนิคสัตหีบ</h5>
                     <p>กม. 160 193 หมู่ 3 ต.นาจอมเทียน</p>
@@ -145,7 +139,7 @@
                     <img src="img/หน่วย.png" alt="" width="100%">
                 </div>
             </div>
-            <div class="col-md-5 bg-light p-2 mx-2">
+            <div class="col-5 bg-light p-3 mx-2">
                 <div>ประกาศจากวิทยาลัย</div>
                 <img src="img/pic1.jpg" alt="" width="100%">
                 <img src="img/pic2.jpg" alt="" width="100%">
@@ -153,52 +147,13 @@
                 <img src="img/pic4.jpg" alt="" width="100%">
                 <img src="img/pic5.jpg" alt="" width="100%">
             </div>
-            <div class="col-md-3 bg-light p-2 mx-4">right</div>
-            <footer>
-                <div class="container text-center">
-                    <p>© 2023 วิทยาลัยเทคนิคสัตหีบ<span>นาย ชัยวัฒน์ ปรารมย์</span></p>
-                </div>
-            </footer>
-            <div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5 bg-primary text-white" id="staticBackdropLabel">Log IN</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="col-3 bg-light p-3 mx-2">right</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 วิทยาลัยเทคนิคสัตหีบ | All Rights Reserved</p>
+        <p>Designed by <a href="#" class="text-white">Your Name</a></p>
+    </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</html>
-
 </html>
